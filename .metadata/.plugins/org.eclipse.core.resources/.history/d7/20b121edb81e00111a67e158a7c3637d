@@ -2,10 +2,6 @@ package com.kh.variable;
 
 public class Variable {
 	// 깃깃
-	// git add .
-	// git commit -m "adads"
-	// git push origin main
-
 	
 	// 변수 : Memory 97/100 (RAM)에 값을 저장하기 위한 "공간"
 
