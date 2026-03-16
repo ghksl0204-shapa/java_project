@@ -195,5 +195,6 @@ public class Variable {
 		// 값을 변경하지 않을 변수 공간
 		
 		final int START_YEAR = 1998;
+		
 	}
 }
