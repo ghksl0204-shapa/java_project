@@ -239,6 +239,7 @@ public class OperatorController {
 	}
 	
 	public void tip() {
+		
 		int num = 10;
 		
 		boolean result = false && (num > 0);
@@ -248,12 +249,45 @@ public class OperatorController {
 	}
 	
 //	public void 
-	/*
-	 *  삼항 연산자 : 피 연산자가 3개
+	
+	/*  삼항 연산자 : 피 연산자가 3개
 	 *  -> 3개의 값과 1개의 연산자로 구성됨(조건문의 형식으로 쓰임)
 	 *  
 	 *  [표현식]
 	 *  조건식 ? 조건식이 true일 경우 결과값 : 조건식이 false일 경우 결과값
 	 *  
+	 *  조건문 : 값에 따라 연산을 처리하는 방식
+	 *         결과값이 true일 경우 첫 번째 문장을 처리
+	 *         결과값이 false일 경우 두 번째 문장을 처리
 	 */
+	
+	// 치킨
+	public void triple() { // 추후확인(삼항연산자)
+		System.out.println("깐부치킨에 오신것을 환영합니다!");
+		System.out.println("1. 회장님의 입맛 그대로 AI치킨");
+		System.out.println("2. 바삭한 식스팩 치킨");
+		System.out.println("3. 치킨의 근본 후라이드 치킨");
+		// Ctrl + Shift + o (import 자동완성)
+		Scanner sc = new Scanner(System.in);
+		System.out.println("주문하실 메뉴번호를 입력해주세요 > ");
+		
+		int menuNo = sc.nextInt();
+		
+		// 계획
+		// 사용자가 메뉴번호로
+		// 1번을 입력하면 회장님의 입맛 그래도 AI치킨을 주문하셨습니다.
+		// 2번을 입력하면 바삭한 식스팩 치킨을 주문하셨습니다.
+		// 3번을 입력하면 치킨의 근본 후라이드 치킨을 주문하셨습니다.
+		// 1번, 2번, 3번이 아니면 없는 메뉴를 주문하셨습니다.
+		// System.out.println(menuNo);
+		
+		// 메뉴번호가 1번일 시 AI머시기 1번이 아닐 시 없는 메뉴입니다 라고 출력
+		String selected = menuNo == 1 ? "회장님의 입맛 그대로 AI치킨을 주문하셨습니다." 
+				        : menuNo == 2 ? "바삭한 식스팩 치킨을 주문하셨습니다."
+				        : menuNo == 3 ? "치킨의 근본 후라이드 치킨을 주문하셨습니다."
+				        : "없는 메뉴를 주문하셨습니다.";
+		
+		System.out.println(selected);
+		
+	}
 }

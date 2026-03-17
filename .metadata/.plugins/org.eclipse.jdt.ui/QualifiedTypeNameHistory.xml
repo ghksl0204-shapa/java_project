@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.kh.variable.inputKeyBoard"/>
     <fullyQualifiedTypeName name="com.kh.variable.Variable"/>
+    <fullyQualifiedTypeName name="com.kh.variable.Casting"/>
+    <fullyQualifiedTypeName name="com.kh.operator.controller.OperatorController"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

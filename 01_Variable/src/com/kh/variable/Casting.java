@@ -105,7 +105,7 @@ public class Casting {
 		// 비교연산자(==)
 		// 좌항과 우항의 값을 비교해서 결과값을 반환
 		// true / false
-		System.out.println("비교 연산자를 사용해보자~~");
+		System.out.println("비교 연산자를 사용해보자~~"); //추후 확인
 		System.out.println(1 == 2);
 		System.out.println('a' == 'b');
 		System.out.println(2 == (int)'2');
