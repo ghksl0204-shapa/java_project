@@ -1,5 +1,9 @@
 package com.kh.chap02.loop;
 
+import java.util.Scanner;
+
+import com.kh.chap01.condition.ConditionIf;
+
 public class LoopFor {
 
 	public void method0() {
@@ -62,7 +66,7 @@ public class LoopFor {
 		
 		for(int i = 0; i < 10; i++) { // i += 2
 			if(i % 2 == 0) {
-			System.out.println(i);
+				System.out.println(i);
 			}
 		
 		}
@@ -71,13 +75,61 @@ public class LoopFor {
 			System.out.println(i);
 		}
 		
-	}	
-		
-		
-		
-		
-		
-		
-		
+	}
 	
+	public void method3() {
+		      
+		for(int i = 2; i < 10; i++) {
+		    for(int k = 1; k < 10; k++) {
+		    	System.out.println(i + "X" + k + "=" + (i*k));
+		    }
+		}
+	}
+	
+	public void gugudan() {
+		
+		// 구구단 프로그램
+		// 사용자에게 정수를 입력받아서
+		// 입력한 정수의 단을 출력해보기
+		
+		// * 구구단을 외자*
+		// 몇 단을 출력하시겠습니까 > 4
+		// 4단을 출력하겠습니다.
+		
+		System.out.println("구구단 프로그램");
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("구구단을 외우자");
+		System.out.print("몇 단을 출력하시겠습니까 > ");
+		int dan = sc.nextInt();
+		System.out.println(dan + "단을 출력하겠습니다.");
+		for(int i = 1; i < 10; i++) {
+			System.out.println(dan + " X " + i + " = " + (dan * i));
+		}
+	} //문법에 매몰되지 말자
+	
+	public void mainMenu() {
+		
+		for( ; ; ) {
+			System.out.println("메인메뉴");
+			System.out.println("1. 구구단 놀이 시작하기");
+			System.out.println("2. O/X퀴즈 시작하기");
+			System.out.println("3. 프로그램 종료하기");
+			Scanner sc = new Scanner(System.in);
+			System.out.print("메뉴를 선택해주세요 > ");
+			int menuNo = sc.nextInt();
+			sc.nextLine();
+			if(menuNo == 1) {
+				gugudan();
+			} else if(menuNo == 2) {
+				ConditionIf ci = new ConditionIf();
+				ci.quiz();
+			} else if(menuNo == 3) {
+				System.out.println("프로그램을 종료합니다.");
+				return;
+			} else {
+				System.out.println("없는 메뉴를 선택하셨습니다~");
+			}
+		}
+	}
 }
