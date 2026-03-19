@@ -7,6 +7,7 @@ public class Run {
 	public static void main(String[] args) {
 
 		Array ar = new Array();
+		
 		// ar.method1();
 		// ar.method2();
 		// ar.createLottoNumber();

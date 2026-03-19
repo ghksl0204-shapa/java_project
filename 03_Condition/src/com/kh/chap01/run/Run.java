@@ -38,12 +38,14 @@ public class Run {
 		// lf.mainMenu();
 		
 		LoopWhile lw = new LoopWhile();
+		
 		// lw.method1();
 		// lw.method2();
 		// lw.method3();
 		// lw.lotto();
 		
 		EscapeBreak eb = new EscapeBreak();
+		
 		// eb.method1();
 		// eb.checkId();
 	}
