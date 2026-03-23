@@ -19,6 +19,7 @@ public class ReceiptView {
 		// 2. 여러 자료형에 각각 여러 개의 값을 보관가능 + 기능
 		System.out.print("가게이름을 입력해주세요 > ");
 		receipt.setStoreName(sc.nextLine());
+		// 메소드 호출부에서 메소드를 호출하면서 넘길 수 있는 것은 오로지 값뿐
 		System.out.print("가격을 입력해주세요 > ");
 		receipt.setPrice(sc.nextInt());
 		sc.nextLine();
@@ -27,9 +28,14 @@ public class ReceiptView {
 		System.out.print("날짜를 입력해주세요 > ");
 		receipt.setDate(sc.nextLine());
 		
+		System.out.println("==================================================");
 		System.out.println(receipt.info());
 		
 		sc.close();
+		
 	}
-
+		
 }
+
+	
+

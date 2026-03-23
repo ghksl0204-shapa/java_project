@@ -40,9 +40,9 @@ public class Receipt {
 	}
 	public String info() {
 		String info = "가게이름 : " + storeName
-				    + "\n 금액 : " + price
-				    + "\n 결제수단 : " + payment
-				    + "\n 결제일시 : " + date;
+				    + "\n금액 : " + price
+				    + "\n결제수단 : " + payment
+				    + "\n결제일시 : " + date;
 		return info;
 	}
 	

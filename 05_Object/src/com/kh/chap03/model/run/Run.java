@@ -9,7 +9,6 @@ public class Run {
 
 		new ReceiptView().mainMenu();
 		
-		
 	}
 
 }
