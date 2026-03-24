@@ -2,11 +2,14 @@ package com.kh.chap07.view;
 
 import java.util.Scanner;
 
+import com.kh.chap07.controller.TicketController;
 import com.kh.chap07.model.vo.Ticket;
 
 public class TicketView {
 
 	private Scanner sc = new Scanner(System.in); 
+	private TicketController tc = new TicketController();
+	
 	// 화면에 메인메뉴를 출력해주는 메소드
 	public void mainMenu() {
 		// 두 가지 기능 구현
@@ -24,7 +27,9 @@ public class TicketView {
 			// System.out.println(menuNo);
 		
 			switch(menuNo) {
+			case 0 : findAll(); break;
 			case 1 : saveView(); break;
+			case 2 : printTicket(); break;
 			case 3 : System.out.println("프로그램을 종료합니다."); sc.close(); return;
 			default : System.out.println("없는 메뉴를 선택하셨습니다.");
 		
@@ -46,7 +51,59 @@ public class TicketView {
 		String service = sc.nextLine();
 		
 		Ticket ticket = new Ticket(meal, service, seatNumber, price);
-		System.out.println(ticket.info());
+		// System.out.println(ticket.info());
+		// 등록된 티켓이 3장이 아니라면 어딘가에 저장해둬야지~
+		// TicketController tc = new TicketController();
+		
+		// 객체에서 다른 객체로 값을 전달할 때는 메소드를 호출해서 넘겨주자!
+		
+		// System.out.println("View : " + ticket);
+		int result = tc.saveTicket(ticket);
+		
+		if(result == 1) {
+		System.out.println("티켓 등록 성공!");
+		} else {
+		System.out.println("티켓 등록 실패...");
+		}
+	}
+	
+	private void printTicket() {
+		
+		// 컨트롤로야 서비스에게 티켓정보 하나만 받아다 주지 않으련?
+		Ticket ticket = tc.printTicket();
+		
+		// 티켓이 있을수도 있음
+		// 티켓이 없을수도 있음
+		if(ticket != null) {
+			System.out.println(ticket.info());
+		} else {
+			System.out.println("티켓이 존재하지 않습니다.");
+		}
+		
+		
+	}
+	
+	private void findAll() {
+		Ticket[] tickets = tc.findAll();
+		
+		for(int i = 0; i < tickets.length; i++) {
+			if(tickets[i] != null) {
+				System.out.println(tickets[i].info());	
+			} else {
+				System.out.println("티켓이 존재하지 않습니다.");
+		}
+		/*if(tickets[0] != null) {
+			System.out.println(tickets[0].info());
+		}
+		if(tickets[1] != null) {
+			System.out.println(tickets[1].info());
+		}
+		if(tickets[2] != null) {
+			System.out.println(tickets[2].info());
+		} else {
+			System.out.println("티켓이 존재하지 않습니다.");
+		} */
+		}
 	}
 }
 
