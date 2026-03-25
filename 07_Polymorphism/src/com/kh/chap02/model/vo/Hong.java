@@ -1,0 +1,18 @@
+package com.kh.chap02.model.vo;
+
+public class Hong {
+	private String name;
+
+	public Hong(String name) {
+		this.name = name;
+	}
+	public void cooking() {
+		System.out.println(name + " s1 요리 시작~");
+	}
+	public void breakTime() {
+		System.out.println(name + " 쉬는 시간!");
+	}
+
+}
+
+

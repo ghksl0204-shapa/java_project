@@ -12,4 +12,7 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.kh.chap05.model.vo.Member"/>
     <fullyQualifiedTypeName name="com.kh.chap05.model.view.View"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.AosGame"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.FpsGame"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.RpgGame"/>
 </qualifiedTypeNameHistroy>
