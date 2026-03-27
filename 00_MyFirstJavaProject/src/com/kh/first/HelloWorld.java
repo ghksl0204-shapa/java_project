@@ -48,7 +48,8 @@ public class HelloWorld { // { Scope / Block }
 		System.out.println("Hello World");
 		
 		printMyName();
-	}
+		
+			}
 	
 	public static void printMyName() {
 		System.out.println("안녕하세요. 제 이름은 박경환입니다. 반갑습니다~");

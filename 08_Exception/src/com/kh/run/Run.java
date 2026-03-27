@@ -39,7 +39,9 @@ public class Run {
 		// ue.orderByCatch();
 		
 		CheckedException ce = new CheckedException();
-		ce.readString();
+		// ce.readString();
+		
+		
 		
 	}
 
