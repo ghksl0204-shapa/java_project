@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.kh.variable.Casting"/>
-    <fullyQualifiedTypeName name="com.kh.operator.controller.OperatorController"/>
-    <fullyQualifiedTypeName name="com.kh.chap01.condition.ConditionIf"/>
-    <fullyQualifiedTypeName name="com.kh.array.Array"/>
-    <fullyQualifiedTypeName name="com.kh.chap04.view.FieldView"/>
-    <fullyQualifiedTypeName name="com.kh.chap04.controller.FieldController"/>
-    <fullyQualifiedTypeName name="com.kh.chap05.model.vo.Member"/>
-    <fullyQualifiedTypeName name="com.kh.chap05.model.view.View"/>
-    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.AosGame"/>
-    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.FpsGame"/>
     <fullyQualifiedTypeName name="com.kh.chap02.model.vo.RpgGame"/>
     <fullyQualifiedTypeName name="com.kh.chap01.model.vo.Child1"/>
     <fullyQualifiedTypeName name="com.kh.chap03.model.vo.MainChef"/>
@@ -23,7 +13,6 @@
     <fullyQualifiedTypeName name="com.kh.controller.CheckedException"/>
     <fullyQualifiedTypeName name="com.kh.sw.view.SwitchView"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="com.kh.sw.model.vo.Switch"/>
     <fullyQualifiedTypeName name="com.kh.sw.controller.SwitchController"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.kh.chap04.run.MyProperties"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.kh.football.model.vo.FootballPlayer"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="com.kh.football.functional.model.dto.Material"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.kh.schedule.model.vo.Event"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>
