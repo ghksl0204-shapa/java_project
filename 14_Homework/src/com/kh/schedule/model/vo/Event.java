@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Event {
 
+	private int idNo;
 	private int startHour;
 	private int startMin;
 	private int endHour;
@@ -12,14 +13,36 @@ public class Event {
 	private String place;
 	private boolean done;
 	
-	public Event(int startHour, int startMin, int endHour, int endMin, String title, String place) {
+	public Event(int idNo, int startHour, int startMin, int endHour, int endMin, String title, String place) {
 		super();
+		this.idNo = idNo;
 		this.startHour = startHour;
 		this.startMin = startMin;
 		this.endHour = endHour;
 		this.endMin = endMin;
 		this.title = title;
 		this.place = place;
+	}
+	
+	public Event(int idNo, int startHour, int startMin, int endHour, int endMin, String title, String place,
+			boolean done) {
+		super();
+		this.idNo = idNo;
+		this.startHour = startHour;
+		this.startMin = startMin;
+		this.endHour = endHour;
+		this.endMin = endMin;
+		this.title = title;
+		this.place = place;
+		this.done = done;
+	}
+
+	public int getIdNo() {
+		return idNo;
+	}
+
+	public void setIdNo(int idNo) {
+		this.idNo = idNo;
 	}
 
 	public int getStartHour() {
@@ -80,9 +103,11 @@ public class Event {
 
 	@Override
 	public String toString() {
-		return "Event [startHour=" + startHour + ", startMin=" + startMin + ", endHour=" + endHour + ", endMin="
-				+ endMin + ", title=" + title + ", place=" + place + ", done=" + done + "]";
+		return "Event [idNo=" + idNo + ", startHour=" + startHour + ", startMin=" + startMin + ", endHour=" + endHour
+				+ ", endMin=" + endMin + ", title=" + title + ", place=" + place + ", done=" + done + "]";
 	}
+
+
 	
 	
 	
