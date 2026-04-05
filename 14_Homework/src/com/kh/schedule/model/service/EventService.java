@@ -60,8 +60,7 @@ public class EventService {
 		
 		for(Event e : events) {
 			if(e.getIdNo() == idNo) {
-				events.remove(idNo - 1);
-				events.add(idNo - 1, new Event(idNo, dto.getStartHour(), dto.getStartMin(), dto.getEndHour(),dto.getEndMin(),dto.getTitle(), dto.getPlace()));
+				events.set(idNo - 1, new Event(idNo, dto.getStartHour(), dto.getStartMin(), dto.getEndHour(),dto.getEndMin(),dto.getTitle(), dto.getPlace()));
 				return events;
 			}
 		}
@@ -72,7 +71,13 @@ public class EventService {
 		
 		for(Event e : events) {
 			if(e.getIdNo() == selectNo) {
-				e.setDone(true);
+				boolean result = false;
+				if(!e.isDone()) {
+					result = true;
+				} else {
+					result = false;
+				}
+				events.set(selectNo - 1, new Event(selectNo, e.getStartHour(), e.getStartMin(), e.getEndHour(), e.getEndMin(), e.getTitle(), e.getPlace(), result));
 				return 1;
 			}
 		}

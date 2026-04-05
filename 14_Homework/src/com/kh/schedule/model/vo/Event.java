@@ -106,10 +106,4 @@ public class Event {
 		return "Event [idNo=" + idNo + ", startHour=" + startHour + ", startMin=" + startMin + ", endHour=" + endHour
 				+ ", endMin=" + endMin + ", title=" + title + ", place=" + place + ", done=" + done + "]";
 	}
-
-
-	
-	
-	
-	
 }

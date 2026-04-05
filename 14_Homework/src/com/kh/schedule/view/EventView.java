@@ -40,7 +40,7 @@ public class EventView {
 			case "3" : updateSchedule(); break;	
 			case "4" : completeSchedule(); break;
 			case "5" : deleteSchedule(); break;
-			case "0" : System.out.println("프로그램을 종료합니다."); sc.close(); return;
+			case "0" : System.out.println("\n프로그램을 종료합니다."); sc.close(); return;
 			default : System.out.println("잘못된 번호를 입력하셨습니다.");
 			}
 		}
@@ -185,6 +185,7 @@ public class EventView {
 			checkSchedule();
 		} catch(InputMismatchException e) {
 			System.out.println("일정번호를 숫자로 입력해주세요");
+			sc.nextLine();
 			return;
 		}
 	}
@@ -211,6 +212,7 @@ public class EventView {
 			checkSchedule();
 		} catch(InputMismatchException e) {
 			System.out.println("일정번호를 숫자로 입력해주세요");
+			sc.nextLine();
 			return;
 		}
 	}
