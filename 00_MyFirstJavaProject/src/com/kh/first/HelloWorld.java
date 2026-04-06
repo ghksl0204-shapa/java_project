@@ -35,7 +35,7 @@ package com.kh.first; // 패키지 선언부 : 현재 클래스의 위치
 	 */
 
 public class HelloWorld { // { Scope / Block }
-	// Scope(Block) {} 는 중괄호로 열리고 닫히는 부분을 이야기하며, 복학문을 구성하는요소
+	// Scope(Block) {} 는 중괄호로 열리고 닫히는 부분을 이야기하며, 복합문을 구성하는요소
 	// 종속된 문장이 여러 줄 일때
 	
 	// main method : 프로그램의 시작점(Entry point), 프로그램 당 1개는 있어야함

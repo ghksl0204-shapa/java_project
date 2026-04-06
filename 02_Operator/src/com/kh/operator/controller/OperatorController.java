@@ -83,7 +83,7 @@ public class OperatorController {
 		System.out.println(num);
 		num--;
 		System.out.println(num);
-		System.err.println(num++); 추후확인
+		System.out.println(num++); 추후확인
 		System.out.println(num++);
 		System.out.println(num);
         */

@@ -152,12 +152,12 @@ public class Variable {
 		// 2_1. 정수형
 		byte byteNumber = 1;    // 1Byte
 		short shortNumber = 2;  // 2Byte
-		int intNumber = 3;      // 4Byte
-		long longNumber = 4L;    // 8Byte
+		int intNumber = 4;      // 4Byte
+		long longNumber = 8L;    // 8Byte
 		
 		// 2_2. 실수형
-		float floatNumber = 2.22F;   // 4Byte
-		double doubleNumber = 3.33;  // 8Byte
+		float floatNumber = 4.44F;   // 4Byte
+		double doubleNumber = 8.88;  // 8Byte
 		
 		// 선언과 동시에 초기화
 		

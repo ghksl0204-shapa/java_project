@@ -41,64 +41,32 @@ public class Event {
 		return idNo;
 	}
 
-	public void setIdNo(int idNo) {
-		this.idNo = idNo;
-	}
-
 	public int getStartHour() {
 		return startHour;
-	}
-
-	public void setStartHour(int startHour) {
-		this.startHour = startHour;
 	}
 
 	public int getStartMin() {
 		return startMin;
 	}
 
-	public void setStartMin(int startMin) {
-		this.startMin = startMin;
-	}
-
 	public int getEndHour() {
 		return endHour;
-	}
-
-	public void setEndHour(int endHour) {
-		this.endHour = endHour;
 	}
 
 	public int getEndMin() {
 		return endMin;
 	}
 
-	public void setEndMin(int endMin) {
-		this.endMin = endMin;
-	}
-
 	public String getTitle() {
 		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
 	}
 
 	public String getPlace() {
 		return place;
 	}
 
-	public void setPlace(String place) {
-		this.place = place;
-	}
-
 	public boolean isDone() {
 		return done;
-	}
-
-	public void setDone(boolean done) {
-		this.done = done;
 	}
 
 	@Override
